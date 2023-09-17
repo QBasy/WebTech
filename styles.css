@@ -14,7 +14,21 @@ form {
 .language-logo {
     text-align: center;
     margin: 20px 0;
+}
 
+.language-logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.language-logo-java {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.language-logo-java img {
+    width: 75px;
+    height: 150px;
 }
 
 .content {
