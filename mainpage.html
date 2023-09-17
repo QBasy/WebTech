@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .backgrouind {
-            background: black;
-        }
-        .hallo {
-            color: black;
-        }
-    </style>
     <meta charset="UTF-8">
-    <title>WebTechnology Assignment by Sayat Adilkhanov</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Technology Assignment</title>
 </head>
 <body>
-<h1 style="font-family: 'Arial Black',serif">Assignment 1</h1>
-<div style="text-align: center;" title="With love from Sayat">
-    <p>Hello there, this is my Assignment for the<span class="hallo"> Web Technologies 1 (Front end)</span></p>
+<div class="header">
+    <h1>Assignment 1</h1>
+    <h4>Made by Sayat Adilkhanov</h4>
+    <h2 class="about">About Web Development</h2>
 </div>
-<br>
-<div style="text-align: center;"><img src="nursultan-nazarbayev-smile.gif" alt="SAD Nurs">
-    <br>
-<div><iframe width="420" height="315"
-             src="https://www.youtube.com/embed/qwovi7eR9UA?autoplay=1">
-</iframe>
-</div></div>
+
+<form action="/submit" method="post">
+    <label for="username">Login:</label>
+    <input type="text" id="username" name="Login" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    <input type="submit" value="PRESS IT!)))">
+</form>
+
+<div class="content">
+    <h4>Programming Languages I Used in Studying:</h4>
+    <ul>
+        <li>In University
+            <ul>
+                <li>C++
+                    <div class="language-logo">
+                        <img src="cpp.png" alt="C++">
+                    </div>
+                </li>
+                <li>Python
+                    <div class="language-logo">
+                        <img src="Python.png" alt="Python">
+                    </div>
+                </li>
+                <li>Java
+                    <div class="language-logo">
+                        <img src="Java_logo.svg.png" alt="Java">
+                    </div>
+                </li>
+                <li>SQL (PostgreSQL)
+                    <div class="language-logo">
+                        <img src="Без%20названия.png" alt="PostgreSQL">
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>Self-Study
+            <ul>
+                <li>C#
+                    <div class="language-logo">
+                        <img src="C%23.png" alt="C#">
+                    </div>
+                </li>
+                <li>Go
+                    <div class="language-logo">
+                        <img src="go.png" alt="GO">
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>There are frameworks for some of them:</p>
+    <table border="2">
+        <tr>
+            <th>Language</th>
+            <th>Framework</th>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Spring or Spark</td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>ASP.NET</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Django or Flask</td>
+        </tr>
+    </table>
+
+    <p>In University, we used <a href="https://moodle.astanait.edu.kz/">Moodle</a> for classworks and homeworks,</p>
+    <p>and for lectures, we used <a href="https://learn.astanait.edu.kz/dashboard">Learn</a>.</p>
+</div>
+
+<center>
+    <button class="resolution"></button>
+</center>
 </body>
 </html>
