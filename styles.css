@@ -1,5 +1,11 @@
-body {
+body.light {
     font-family: Arial, sans-serif;
+    color: whitesmoke;
+}
+
+body.dark {
+    font-family: Arial, sans-serif;
+    color: black;
 }
 
 .header {
@@ -36,7 +42,17 @@ form {
     margin-top: 30px;
 }
 
-.resolution {
+.button {
     width: 300px;
     height: 30px;
+}
+
+.button.active {
+    background-color: black;
+    color: yellow;
+}
+
+.button.hover {
+    background-color: whitesmoke;
+    color: azure;
 }
