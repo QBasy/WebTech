@@ -13,6 +13,9 @@ body.dark {
     font-family: "Arial Black", sans-serif;
 }
 
+.center {
+    text-align: center;
+}
 form {
     text-align: center;
 }
