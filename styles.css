@@ -1,43 +1,60 @@
-body.light {
-    font-family: Arial, sans-serif;
-    color: whitesmoke;
-}
-
-body.dark {
-    font-family: Arial, sans-serif;
-    color: black;
-}
-
 .header {
     text-align: center;
     font-family: "Arial Black", sans-serif;
+    position: sticky;
 }
 
 .center {
     text-align: center;
 }
+
 form {
-    text-align: center;
+    text-align: left;
+    position: relative;
 }
 
-.language-logo {
+.menu {
+    border: white;
     text-align: center;
-    margin: 20px 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.language-list {
+    border-style: groove;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.language-list li {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
 }
 
 .language-logo img {
-    width: 150px;
-    height: 150px;
-}
-
-.language-logo-java {
-    text-align: center;
-    margin: 20px 0;
+    width: 60px;
+    height: 60px;
 }
 
 .language-logo-java img {
-    width: 75px;
-    height: 150px;
+    width: 30px;
+    height: 60px;
 }
 
 .content {
@@ -50,12 +67,11 @@ form {
     height: 30px;
 }
 
-.button.active {
-    background-color: black;
-    color: yellow;
+.frameworks {
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.button.hover {
-    background-color: whitesmoke;
-    color: azure;
+.copyrights {
+    position: absolute;
 }
