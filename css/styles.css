@@ -31,6 +31,15 @@ form {
     color: #333;
 }
 
+.navbarcontainer {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .language-list {
     border-style: groove;
     list-style-type: none;
