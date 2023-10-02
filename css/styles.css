@@ -79,8 +79,17 @@ form {
 .frameworks {
     font-family: Arial, sans-serif;
     text-align: center;
+    color: azure;
 }
 
 .copyrights {
     position: absolute;
+}
+
+.fw-backgrounds {
+    background-color: #333333;
+}
+
+.fw-backgrounds h4 {
+    color: azure;
 }
