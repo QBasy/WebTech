@@ -48,31 +48,31 @@
     <ul class="language-list">
         <li>
             <div class="language-logo">
-                <a class="nav-link" href="languages.html"><img src="../images/cpp.png" alt="C++"></a>
+                <a class="nav-link" href="languages.html"><img src="/images/cpp.png" alt="C++"></a>
             </div>
             <p>C++</p>
         </li>
         <li>
             <div class="language-logo">
-                <a class="nav-link" href="languages.html"><img src="../images/Python.png" alt="Python"></a>
+                <a class="nav-link" href="languages.html"><img src="/images/Python.png" alt="Python"></a>
             </div>
             <p>Python</p>
         </li>
         <li>
             <div class="language-logo-java">
-                <a class="nav-link" href="languages.html"><img src="../images/Java_logo.svg.png" alt="Java"></a>
+                <a class="nav-link" href="languages.html"><img src="/images/Java_logo.svg.png" alt="Java"></a>
             </div>
             <p>Java</p>
         </li>
         <li>
             <div class="language-logo">
-                <a class="nav-link" href="languages.html"><img src="../images/C%23.png" alt="C#"></a>
+                <a class="nav-link" href="languages.html"><img src="/images/C%23.png" alt="C#"></a>
             </div>
             <p>C#</p>
         </li>
         <li>
             <div class="language-logo-go">
-                <a class="nav-link" href="languages.html"><img src="../images/go.png" alt="GO"></a>
+                <a class="nav-link" href="languages.html"><img src="/images/go.png" alt="GO"></a>
             </div>
             <p>Go</p>
         </li>
@@ -89,15 +89,15 @@
     <div class ="row">
         <div class="language-logo col-sm-3">
             <h4>Spring for Java</h4>
-            <a class="nav-link" href="frameworks.html"><img src="../images/Spring.png" alt="Spring"></a>
+            <a class="nav-link" href="frameworks.html"><img src="/images/Spring.png" alt="Spring"></a>
         </div>
         <div class="language-logo col-sm-3">
             <h4>.Net for C#</h4>
-            <a class="nav-link" href="frameworks.html"><img src="../images/dotnet.png" alt=".Net"></a>
+            <a class="nav-link" href="frameworks.html"><img src="/images/dotnet.png" alt=".Net"></a>
         </div>
         <div class="language-logo col-sm-3">
             <h4>Django for Python</h4>
-            <a class="nav-link" href="frameworks.html"><img src="../images/Django.png" alt="Django"></a>
+            <a class="nav-link" href="frameworks.html"><img src="/images/Django.png" alt="Django"></a>
         </div>
     </div>
 </div>
