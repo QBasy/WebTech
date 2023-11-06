@@ -16,7 +16,7 @@ const newDiv = $("<div class=\"container card\" style=\"width:500px\">\n" +
     "</div>");
 
 const submittedDiv = $("<h3 class='text-center'>Thanks for your Feedback, here is a button to start a simple game</h3>" +
-    "<button onclick='startGame()' id=\"startGame\" type=\"submit\" class=\"btn btn-primary\">Start Game</button>");
+    "<button id=\"startGame\" type=\"submit\" class=\"btn btn-primary\"><a href='../html/Drag&Drop.html'>Start Game</button>");
 
 function createFeedback() {
     $("#Feedback").replaceWith(newDiv);
