@@ -1,4 +1,9 @@
-let newDiv = $("<div class=\"container card\" style=\"width:500px\">\n" +
+const feedback = {
+    name: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
+    message: /^.{5,}$/
+}
+
+const newDiv = $("<div class=\"container card\" style=\"width:500px\">\n" +
     "    <div class=\"mb-3 mt-3\">\n" +
     "        <label for=\"email\" class=\"form-label\">Email:</label>\n" +
     "        <input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Enter email\" name=\"email\">\n" +
@@ -10,10 +15,10 @@ let newDiv = $("<div class=\"container card\" style=\"width:500px\">\n" +
     "    <br>\n" +
     "</div>");
 
-let submittedDiv = "<h3 class='text-center'>Thanks for your Feedback, here is a button to start a simple game</h3>" +
-    "<button onclick='startGame()' id=\"startGame\" type=\"submit\" class=\"btn btn-primary\">Start Game</button>"
+const submittedDiv = $("<h3 class='text-center'>Thanks for your Feedback, here is a button to start a simple game</h3>" +
+    "<button onclick='startGame()' id=\"startGame\" type=\"submit\" class=\"btn btn-primary\">Start Game</button>")
 
-let gameDiv = `
+const gameDiv = $(`
         <div class="container">
             <h1>Match the Countries with Their Capitals</h1>
             
@@ -31,13 +36,21 @@ let gameDiv = `
             
             <p id="result"></p>
         </div>
-        `;
+        `);
 
 function createFeedback() {
     $("#Feedback").replaceWith(newDiv);
     $("#submitBtn").on("click", function () {
         submitFeedback();
     });
+}
+
+function checkEmailMsg(email, msg) {
+    if (feedback.name.test(email)) {
+        return feedback.message.test(msg);
+    } else {
+        return false;
+    }
 }
 
 function submitFeedback() {
