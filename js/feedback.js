@@ -17,6 +17,34 @@ const newDiv = $("<div class=\"container card\" style=\"width:500px\">\n" +
 
 const submittedDiv = $("<h3 class='text-center'>Thanks for your Feedback, here is a button to start a simple game</h3>" +
     "<center><button id=\"startGame\" type=\"submit\" class=\"btn btn-primary\"><a href='../html/Drag&Drop.html'>Start Game</button></center>");
+const ids = ["python", "java", "c#", "c++", "go"];
+const scrollButtonPython = document.getElementById(ids[0]);
+const scrollButtonJava = document.getElementById(ids[1]);
+const scrollButtonCSharp = document.getElementById(ids[2]);
+const scrollButtonCPP = document.getElementById(ids[3]);
+const scrollButtonGO = document.getElementById(ids[4]);
+const targetSectionPython = document.getElementById('Pythont');
+const targetSectionJava = document.getElementById('javat');
+const targetSectionCSharp = document.getElementById('csharpt');
+const targetSectionCPP = document.getElementById('cppt');
+const targetSectionGO = document.getElementById('got');
+
+scrollButtonPython.addEventListener('click', () => {
+    targetSectionPython.scrollIntoView({ behavior: 'smooth' });
+});
+scrollButtonJava.addEventListener('click', () => {
+    targetSectionJava.scrollIntoView({ behavior: 'smooth' });
+});
+scrollButtonCSharp.addEventListener('click', () => {
+    targetSectionCSharp.scrollIntoView({ behavior: 'smooth' });
+});
+scrollButtonCPP.addEventListener('click', () => {
+    targetSectionCPP.scrollIntoView({ behavior: 'smooth' });
+});
+
+scrollButtonGO.addEventListener('click', () => {
+    targetSectionGO.scrollIntoView({ behavior: 'smooth' });
+});
 
 function createFeedback() {
     $("#Feedback").replaceWith(newDiv);
@@ -47,6 +75,6 @@ function drag(event) {
 }
 function drop(event) {
     event.preventDefault();
-    var data = event.dataTransfer.getData("text");
+    let data = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(data));
 }
